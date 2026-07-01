@@ -10,5 +10,9 @@ public class App {
         Cat catBean2 = (Cat) applicationContext.getBean("cat");
         System.out.println(bean == bean2);
         System.out.println(catBean == catBean2);
+
+        //чтобы геттеры не подсвечивались
+        System.out.println(catBean.getMessage());
+        System.out.println(bean.getMessage());
     }
 }
